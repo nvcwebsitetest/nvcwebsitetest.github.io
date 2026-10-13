@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://nvcwebsitetest.github.io/sitemap.xml
