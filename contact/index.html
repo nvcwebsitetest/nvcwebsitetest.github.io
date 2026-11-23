@@ -29,7 +29,8 @@
       <nav class="nav-links" aria-label="Main navigation">
         <div class="dropdown"><a href="../index.html#conversions" class="dropdown-toggle">Conversions <span
               aria-hidden="true">⌄</span></a>
-          <div class="dropdown-menu"><a href="../conversions/tour.html">Tour +</a><a href="../conversions/highlander-classic.html">Highlander
+          <div class="dropdown-menu"><a href="../conversions/tour.html">Tour +</a><a
+              href="../conversions/highlander-classic.html">Highlander
               Classic</a><a href="../conversions/lowlander.html">Lowlander</a></div>
         </div>
         <a href="../index.html#craft">Our approach</a><a href="../index.html#specification">What's included</a><a
@@ -79,13 +80,18 @@
             <p class="small-note">Please check with the team before travelling, as hours can change.</p>
           </div>
         </div>
-        <form class="contact-form" id="enquiry-form">
+        <form class="contact-form" id="enquiry-form" action="https://formsubmit.co/nenevalleycampers@gmail.com"
+          method="POST">
+          <input type="hidden" name="_subject" value="New Website Enquiry - Nene Valley Campers">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_captcha" value="true">
+          <!--<input type="hidden" name="_next" value="../contact/thank-you.html">-->
           <p class="eyebrow">YOUR CAMPER, YOUR PLANS</p>
           <h3>Start an enquiry</h3>
           <p class="form-sub">Fill in what you can. We'll take it from there.</p>
           <label for="name">Your name *</label><input id="name" name="name" autocomplete="name" placeholder="Name"
             required>
-          <label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email"
+          <label for="email">Email address *</label><input id="email" name="_replyto" type="email" autocomplete="email"
             placeholder="you@example.com" required>
           <label for="phone">Phone number (optional)</label><input id="phone" name="phone" type="tel" autocomplete="tel"
             placeholder="Your number">
@@ -106,12 +112,13 @@
           </select>
           <label for="message">Tell us about your plans *</label><textarea id="message" name="message" rows="5"
             placeholder="Your van, ideas, preferred layout, questions…" required></textarea>
-          <label class="consent-row"><input type="checkbox" id="privacy" required><span>I agree that my details may be
-              used to respond to this enquiry. *</span></label>
-          <button class="button button-dark form-submit" type="submit">Prepare email enquiry <span>↗</span></button>
-          <p class="form-note">This static-site form opens your email app with your message prepared. It does not submit
-            data to a server or store your details.</p>
-          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          <label class="consent-row">
+            <input type="checkbox" id="privacy" name="privacy_consent" value="Agreed" required>
+            <span>I agree that my details may be used to respond to this enquiry. *</span>
+          </label>
+          <button class="button button-dark form-submit" type="submit">Send email enquiry <span>↗</span></button>
+          <p class="form-note">Your enquiry will be sent securely to our team.
+            We'll be in touch as soon as possible.</p>
         </form>
       </div>
     </section>
@@ -155,8 +162,10 @@
           </details>
           <details>
             <summary>Which conversion should I choose?</summary>
-            <p>Compare the <a href="../conversions/tour.html">Tour +</a>, <a href="../conversions/highlander-classic.html">Highlander
-                Classic</a> and <a href="../conversions/lowlander.html">Lowlander</a> pages, then tell us how you plan to travel. We
+            <p>Compare the <a href="../conversions/tour.html">Tour +</a>, <a
+                href="../conversions/highlander-classic.html">Highlander
+                Classic</a> and <a href="../conversions/lowlander.html">Lowlander</a> pages, then tell us how you plan
+              to travel. We
               can help you compare layouts and options.</p>
           </details>
           <details>
