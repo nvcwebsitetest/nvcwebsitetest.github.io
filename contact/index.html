@@ -85,14 +85,18 @@
           <input type="hidden" name="_subject" value="New Website Enquiry - Nene Valley Campers">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="true">
+          <input type="hidden" name="_replyto" id="replyto">
           <!--<input type="hidden" name="_next" value="../contact/thank-you.html">-->
           <p class="eyebrow">YOUR CAMPER, YOUR PLANS</p>
           <h3>Start an enquiry</h3>
           <p class="form-sub">Fill in what you can. We'll take it from there.</p>
           <label for="name">Your name *</label><input id="name" name="name" autocomplete="name" placeholder="Name"
             required>
-          <label for="email">Email address *</label><input id="email" name="_replyto" type="email" autocomplete="email"
-            placeholder="you@example.com" required>
+          <label for="email">Email address *</label>
+<input id="email" name="email" type="email"
+       autocomplete="email"
+       placeholder="you@example.com"
+       required>
           <label for="phone">Phone number (optional)</label><input id="phone" name="phone" type="tel" autocomplete="tel"
             placeholder="Your number">
           <label for="model">Which conversion interests you?</label><select id="model" name="model">
